@@ -13,16 +13,22 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    return view('client.app');
+    $navLinks = config('navbar');
+    $footerLinks = config('footerNav');
+    return view('client.app', [
+        "navLinks" => $navLinks,
+        "footerLinks" => $footerLinks
+    ]);
 })->name('home');
 
 Route::get('/comics', function () {
     $comics = config('comics');
-    return view('client.comics', ["comics" => $comics]);
-})->name('comics');
-
-Route::get('partials.header', function () {
     $navLinks = config('navbar');
-    return view('partials.header', ['navLinks' => $navLinks]);
-});
+    $footerLinks = config('footerNav');
+    return view('client.comics', [
+        "comics" => $comics,
+        "navLinks" => $navLinks,
+        "footerLinks" => $footerLinks
+    ]);
+})->name('comics');
 

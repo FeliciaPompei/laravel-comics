@@ -70,6 +70,45 @@ main {
   width: 70%;
   padding: 3rem;
   margin: 0 auto;
+  text-align: center;
+}
+main .bg-gray {
+  background-color: #1c1c1c;
+}
+main .main-content {
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 2rem;
+  justify-content: center;
+  position: relative;
+}
+main .bg-blue {
+  background-color: #0282f9;
+}
+main .bg-blue li img {
+  width: 20%;
+  vertical-align: middle;
+  margin-right: 0.2rem;
+}
+main .bg-blue li a {
+  text-transform: uppercase;
+  color: white;
+  font-size: 0.5rem;
+}
+main .btn {
+  background-color: #0282f9;
+  padding: 0.5rem 3rem;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+main .btn-position {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
 }
 main .my-card {
   width: 140px;

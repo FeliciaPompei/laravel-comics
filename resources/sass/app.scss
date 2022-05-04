@@ -42,6 +42,49 @@ main {
     width: 70%;
     padding: 3rem;
     margin:0 auto;
+    text-align: center;
+    .bg-gray{
+        background-color: $darkGray;
+    }
+
+    .main-content{
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 2rem;
+        justify-content: center;
+        position:relative;
+    }
+    .bg-blue{
+        background-color:$primaryColor;
+        li{
+        img{
+        width:20%;
+        vertical-align: middle;
+        margin-right: 0.2rem;
+
+        }
+        a {
+        text-transform: uppercase;
+        color:white;
+        font-size: 0.5rem;
+        }
+    }
+    }
+    .btn {
+        background-color: $primaryColor;
+        padding: 0.5rem 3rem;
+        color:white;
+        text-align:center;
+        text-transform: uppercase;
+        font-size:0.8rem;
+    }
+    .btn-position{
+        position:absolute;
+        top:-15px;
+        left: 15px;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
     .my-card{
         width:140px;
         height:180px;
