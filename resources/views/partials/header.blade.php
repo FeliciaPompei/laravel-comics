@@ -3,20 +3,24 @@
         <h1>I'm a header</h1>
         <ul>
             <li>
-                Item
+                <a href="{{route('home')}} ">characters</a>
             </li>
             <li>
-                Item
+                <a href="#">characters</a>
             </li>
             <li>
-                Item
+                <a href="{{route('comics')}} ">comics</a>
             </li>
             <li>
-                Item
+                <a href="#">movies</a>
             </li>
             <li>
-                Item
+                <a href="#">tv</a>
             </li>
+            <li>
+                <a href="#">games</a>
+            </li>
+            
 
         </ul>
     </nav>
