@@ -1,27 +1,17 @@
 <header>
-    <nav>
-        <h1>I'm a header</h1>
-        <ul>
-            <li>
-                <a href="{{route('home')}} ">characters</a>
-            </li>
-            <li>
-                <a href="#">characters</a>
-            </li>
-            <li>
-                <a href="{{route('comics')}} ">comics</a>
-            </li>
-            <li>
-                <a href="#">movies</a>
-            </li>
-            <li>
-                <a href="#">tv</a>
-            </li>
-            <li>
-                <a href="#">games</a>
-            </li>
-            
-
-        </ul>
-    </nav>
+    <div id="main-header">
+        <div id="header-wrapper" class="my-flex my-container">
+            <img class="my-height-100" src="{{asset("images/dc-logo.png")}} " alt="DC logo">
+            <ul class="my-flex my-height-100">
+                {{-- @dump($headerLinks) --}}
+                {{-- @foreach ($headerLinks as $headerLink )
+                    <li>
+                        <a href="{{$headerLink['link']}} ">
+                            {{$headerLink['text']}}
+                        </a>
+                    </li>
+                @endforeach --}}
+            </ul>
+        </div>
+    </div>
 </header>
