@@ -10,6 +10,7 @@
 <body>
     @include('partials.header')
 
+    @include('partials.banner')
     <main>
         @yield('main-content')
     </main>
