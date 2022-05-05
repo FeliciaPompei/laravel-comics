@@ -2,10 +2,11 @@
 
 @section('main-content')
 <div class="comic-img-wrapper">
-
+    <a href="{{route('comics')}} ">
+        <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+    </a>
 </div>
 <div id="comic-wrapper">
-    @dump($comic)
     <h1>
         {{$comic['title']}}
     </h1>
@@ -15,9 +16,9 @@
     <p>
         {{$comic['description']}}
     </p>
-    <div class="d-flex">
-        <div >
-            <div class="d-flex">
+    <div class="my-flex">
+        <div>
+            <div class="my-flex">
                 <h6>
                     Art by:
                 </h6>
@@ -29,7 +30,7 @@
                     @endforeach
                 </p>
             </div>
-            <div class="d-flex">
+            <div class="my-flex">
                 <h6>
                     Written by:
                 </h6>
@@ -43,7 +44,13 @@
             </div>
         </div>
         <div>
-            <div class="d-flex">
+            <h3>
+                advertistement
+            </h3>
+            <img src="{{asset('images/adv.jpg')}}" alt="Advert">
+        </div>
+        <div>
+            <div class="my-flex">
                 <h6>
                     series:
                 </h6>
@@ -51,7 +58,7 @@
                     {{$comic['series']}}
                 </p>
             </div>
-            <div class="d-flex">
+            <div class="my-flex">
                 <h6>
                     U.S. Price:
                 </h6>
@@ -59,7 +66,7 @@
                     {{$comic['price']}}
                 </p>
             </div>
-            <div class="d-flex">
+            <div class="my-flex">
                 <h6>
                     On sale Date::
                 </h6>
