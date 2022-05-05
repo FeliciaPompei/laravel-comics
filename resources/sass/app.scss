@@ -49,6 +49,7 @@ main {
     margin:0 auto;
     text-align: center;
     color:white;
+    position:relative;
     .bg-gray{
         background-color: $darkGray;
     }
@@ -115,11 +116,24 @@ main {
 
 #comic-wrapper{
     background-color:white;
-    width:70%;
+    width:80%;
     margin:0 auto;
     color:black;
-
 }
+.comic-img-wrapper{
+    display:flex;
+    justify-content:baseline;
+    align-items: flex-start;
+    height:10vh;
+    background-color:aqua;
+    position:relative;
+    img{
+        position:absolute;
+        bottom:0.7rem;
+        left:0;
+    }
+}
+
 
 #top-footer{
     height: 40vh;

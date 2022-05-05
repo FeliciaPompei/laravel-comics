@@ -77,6 +77,7 @@ main {
   margin: 0 auto;
   text-align: center;
   color: white;
+  position: relative;
 }
 main .bg-gray {
   background-color: #1c1c1c;
@@ -137,9 +138,23 @@ main .my-card-img img {
 
 #comic-wrapper {
   background-color: white;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   color: black;
+}
+
+.comic-img-wrapper {
+  display: flex;
+  justify-content: baseline;
+  align-items: flex-start;
+  height: 10vh;
+  background-color: aqua;
+  position: relative;
+}
+.comic-img-wrapper img {
+  position: absolute;
+  bottom: 0.7rem;
+  left: 0;
 }
 
 #top-footer {
