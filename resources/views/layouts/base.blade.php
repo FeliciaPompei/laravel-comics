@@ -8,13 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    @include('partials.header')
+    @include('partials.header',['navLinks' => config('navbar')] )
 
     @include('partials.banner')
     <main>
         @yield('main-content')
     </main>
 
-    @include('partials.footer')
+    @include('partials.footer', ['footerLinks' => config('footerNav')])
 </body>
 </html>

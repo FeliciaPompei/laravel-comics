@@ -7,8 +7,13 @@ header{
         justify-content: space-evenly;
         align-items:center;
         height: 10vh;
-        img{
+        a {
+            justify-content: space-evenly;
+            align-items:center;
+            height: 10vh;
+            img{
             padding: 0.5rem;
+            }
         }
         ul{
             align-items: center;
@@ -31,9 +36,9 @@ header{
 }
 
 #my-jumbotron{
-    height:35vh;
+    height:40vh;
     width:100%;
-    background-image: url(images/jumbotron.jpg);
+    background-image: url(../images/jumbotron.jpg);
     background-color:rgb(47, 47, 86);
     background-size:cover;
 }
@@ -43,6 +48,7 @@ main {
     padding: 3rem;
     margin:0 auto;
     text-align: center;
+    color:white;
     .bg-gray{
         background-color: $darkGray;
     }
@@ -105,9 +111,19 @@ main {
     }
 }
 
+// comic book page
+
+#comic-wrapper{
+    background-color:white;
+    width:70%;
+    margin:0 auto;
+    color:black;
+
+}
+
 #top-footer{
     height: 40vh;
-    background-image: url(../assets/img/footer-bg.jpg);
+    background-image: url(../images/footer-bg.jpg);
     background-size:cover;
 }
     .top-footer-wrapper{

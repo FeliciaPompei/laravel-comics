@@ -38,7 +38,12 @@ header #header-wrapper {
   align-items: center;
   height: 10vh;
 }
-header #header-wrapper img {
+header #header-wrapper a {
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+}
+header #header-wrapper a img {
   padding: 0.5rem;
 }
 header #header-wrapper ul {
@@ -59,9 +64,9 @@ header #header-wrapper ul li .active {
 }
 
 #my-jumbotron {
-  height: 35vh;
+  height: 40vh;
   width: 100%;
-  background-image: url(images/jumbotron.jpg);
+  background-image: url(../images/jumbotron.jpg);
   background-color: rgb(47, 47, 86);
   background-size: cover;
 }
@@ -71,6 +76,7 @@ main {
   padding: 3rem;
   margin: 0 auto;
   text-align: center;
+  color: white;
 }
 main .bg-gray {
   background-color: #1c1c1c;
@@ -129,9 +135,16 @@ main .my-card-img img {
   margin-bottom: 0.5rem;
 }
 
+#comic-wrapper {
+  background-color: white;
+  width: 70%;
+  margin: 0 auto;
+  color: black;
+}
+
 #top-footer {
   height: 40vh;
-  background-image: url(../assets/img/footer-bg.jpg);
+  background-image: url(../images/footer-bg.jpg);
   background-size: cover;
 }
 

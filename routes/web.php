@@ -13,22 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Route::get('/', function () {
-    $navLinks = config('navbar');
-    $footerLinks = config('footerNav');
-    return view('client.app', [
-        "navLinks" => $navLinks,
-        "footerLinks" => $footerLinks
-    ]);
+    return view('client.app');
 })->name('home');
 
 Route::get('/comics', function () {
     $comics = config('comics');
-    $navLinks = config('navbar');
-    $footerLinks = config('footerNav');
     return view('client.comics', [
         "comics" => $comics,
-        "navLinks" => $navLinks,
-        "footerLinks" => $footerLinks
     ]);
 })->name('comics');
 
+Route::get('/comics/{id}', function ($id) {
+    $comics = config('comics');
+    if( is_numeric($id) && $id >= 0 && $id < count($comics)){
+        return view('client.comicBook', [
+            "comic" => $comics[$id]
+        ]);
+    } else {
+        abort(404);
+    }
+})->name('comicBook');
