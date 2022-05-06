@@ -144,6 +144,61 @@ main .my-card-img img {
   width: 70%;
   margin: 0 auto;
   color: black;
+  text-align: left;
+}
+#comic-wrapper .top-description {
+  justify-content: center;
+  align-items: center;
+}
+#comic-wrapper .comic-description {
+  width: 70%;
+  padding: 0.7rem;
+  color: rgb(60, 60, 75);
+}
+#comic-wrapper .comic-description h1 {
+  margin-bottom: 0.5rem;
+}
+#comic-wrapper .ad-wrapper {
+  width: 30%;
+  text-transform: uppercase;
+  color: rgb(123, 123, 123);
+  text-align: right;
+  font-size: 0.7rem;
+}
+#comic-wrapper .ad-wrapper h3 {
+  margin-bottom: 0.5rem;
+}
+#comic-wrapper .ad-wrapper img {
+  width: 100%;
+}
+#comic-wrapper .price-tag {
+  background-color: palegreen;
+  width: 100%;
+  margin-bottom: 0.9rem;
+}
+#comic-wrapper .price-tag .price {
+  width: 75%;
+  border: 1px black solid;
+  padding: 0.5rem;
+  justify-content: space-between;
+  color: darkgreen;
+}
+#comic-wrapper .price-tag .availble {
+  width: 25%;
+  padding: 0.5rem;
+  border: 1px solid black;
+}
+#comic-wrapper .comic-details {
+  background-color: beige;
+}
+#comic-wrapper .comic-details .talent-col {
+  width: 50%;
+}
+#comic-wrapper .comic-details .talent-col h4 {
+  margin-bottom: 0.4rem;
+}
+#comic-wrapper .comic-details .specs.col {
+  width: 50%;
 }
 
 .comic-img-wrapper {
@@ -160,6 +215,27 @@ main .my-card-img img {
   width: 150px;
   bottom: 0.7rem;
   left: 0;
+}
+.comic-img-wrapper .previous-button, .comic-img-wrapper .comic-type {
+  position: absolute;
+  bottom: 0.7rem;
+  left: 0;
+  width: 150px;
+  background-color: #40b0ee;
+  color: white;
+  text-align: center;
+}
+.comic-img-wrapper .previous-button p, .comic-img-wrapper .comic-type p {
+  text-transform: uppercase;
+}
+.comic-img-wrapper .comic-type {
+  top: -160px;
+  width: 75px;
+  height: 20px;
+  line-height: 20px;
+}
+.comic-img-wrapper .comic-type p {
+  font-size: 0.7rem;
 }
 
 #top-footer {

@@ -121,6 +121,62 @@ main {
     width:70%;
     margin:0 auto;
     color:black;
+    text-align:left;
+    .top-description{
+        justify-content:center;
+        align-items:center;
+    }
+    .comic-description{
+        width:70%;
+        padding: 0.7rem;
+        color: rgb(60, 60, 75);
+        h1{
+            margin-bottom: 0.5rem;
+        }
+    }
+    .ad-wrapper{
+        width:30%;
+        text-transform: uppercase;
+        color:rgb(123, 123, 123);
+        text-align: right;
+        font-size:0.7rem;
+        h3{
+            margin-bottom: 0.5rem;
+        }
+        img{
+            width:100%;
+        }
+    }
+    .price-tag{
+        background-color: palegreen;
+        width: 100%;
+        margin-bottom: 0.9rem;
+        .price{
+            width: 75%;
+            border: 1px black solid;
+            padding: 0.5rem;
+            justify-content: space-between;
+            color:darkgreen;
+
+        }
+        .availble{
+            width:25%;
+            padding: 0.5rem;
+            border:1px solid black;
+        }
+    }
+    .comic-details{
+        background-color: beige;
+        .talent-col{
+            width:50%;
+            h4{
+                margin-bottom:0.4rem;
+            }
+        }
+        .specs.col{
+            width:50%;
+        }
+    }
 }
 .comic-img-wrapper{
     display:flex;
@@ -135,6 +191,28 @@ main {
         width:150px;
         bottom:0.7rem;
         left:0;
+    }
+    .previous-button, .comic-type{
+        position:absolute;
+        bottom:0.7rem;
+        left:0;
+        width:150px;
+        background-color: #40b0ee;
+        color:white;
+        text-align:center;
+        p{
+            text-transform: uppercase;
+        }
+    }
+    .comic-type{
+        top:-160px;;
+        width:75px;
+        height:20px;
+        line-height: 20px;
+        p{
+            font-size: 0.7rem;
+
+        }
     }
 }
 
