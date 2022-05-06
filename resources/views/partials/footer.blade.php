@@ -4,6 +4,11 @@
             <div class="top-footer-wrapper">
             <div class="footer-nav-bar">
             <ul>
+                <li>
+                    <h4>
+                        dc comics
+                    </h4>
+                </li>
                 @foreach($footerLinks['dcComicsLinks'] as $footerLink)
                     <li>
                         <a href="{{ $footerLink['link'] }}">
@@ -13,6 +18,11 @@
 				@endforeach
             </ul>
             <ul>
+                <li>
+                    <h4>
+                        dc
+                    </h4>
+                </li>
                 @foreach($footerLinks['dcLinks'] as $footerLink)
                     <li>
                         <a href="{{ $footerLink['link'] }}">
@@ -22,6 +32,11 @@
 				@endforeach
             </ul>
             <ul>
+                <li>
+                    <h4>
+                        sites
+                    </h4>
+                </li>
                 @foreach($footerLinks['dcSiteLinks'] as $footerLink)
                     <li>
                         <a href="{{ $footerLink['link'] }}">
@@ -31,6 +46,11 @@
 				@endforeach
             </ul>
             <ul>
+                <li>
+                    <h4>
+                        shop
+                    </h4>
+                </li>
                 @foreach($footerLinks['dcShopLinks'] as $footerLink)
                     <li>
                         <a href="{{ $footerLink['link'] }}">

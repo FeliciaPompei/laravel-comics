@@ -1,9 +1,8 @@
 @extends('layouts.base')
+@section('title', 'Comic Books')
 
 @section('main-content')
-
-<div class="bg-gray">
-
+<div class="container">
     <div class="main-content my-flex my-container">
         <a class="btn btn-position" href="#">current series</a>
         <div class="card-container my-flex">
@@ -16,7 +15,6 @@
                     </div>
                     <div>
                         <h4> {{$comic['series']}} </h4>
-                        <p> {{$comic['price']}} </p>
                     </div>
                 </div>
             @endforeach
@@ -24,10 +22,6 @@
         <a class="btn">Load More</a>
     </div>
 </div>
-<div class="bg-blue">
-
-</div>
-
 @endsection
 
 
