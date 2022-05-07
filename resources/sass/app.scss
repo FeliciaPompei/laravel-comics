@@ -28,13 +28,18 @@ header{
             a{
                 text-transform: uppercase;
             }
-            .active {
-                border-bottom: 5px solid #0282f9;
-            }
+
             }
         }
     }
 }
+
+.active {
+    border-bottom: 5px solid #0282f9;
+    color: #0282f9;
+}
+
+// jumbotron
 
 #my-jumbotron{
     height:40vh;
@@ -43,6 +48,8 @@ header{
     background-color:rgb(47, 47, 86);
     background-size:cover;
 }
+
+// main comics
 
 main {
 
@@ -128,10 +135,16 @@ main {
     }
     .comic-description{
         width:70%;
-        padding: 0.7rem;
+        padding: 1.2rem;
         color: rgb(60, 60, 75);
-        h1{
-            margin-bottom: 0.5rem;
+        h2{
+            margin-bottom: 0.9rem;
+        }
+        .comic-content{
+            line-height: 1.5rem;
+            font-weight: 700;
+            font-size: 0.9rem;
+
         }
     }
     .ad-wrapper{
@@ -148,35 +161,71 @@ main {
         }
     }
     .price-tag{
-        background-color: palegreen;
+        background-color: #55ba59;
         width: 100%;
         margin-bottom: 0.9rem;
+        font-weight: 600;
         .price{
-            width: 75%;
+            width: 70%;
             border: 1px black solid;
-            padding: 0.5rem;
+            padding: 1rem;
             justify-content: space-between;
-            color:darkgreen;
 
         }
         .availble{
-            width:25%;
-            padding: 0.5rem;
+            width:30%;
+            padding: 1rem 0.5rem;
             border:1px solid black;
+            text-align: center;
         }
     }
-    .comic-details{
-        background-color: beige;
-        .talent-col{
-            width:50%;
-            h4{
-                margin-bottom:0.4rem;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.text-green{
+    color:#87db77;
+}
+.text-white{
+    color:white;
+}
+.text-gray{
+    color:gray;
+}
+.bg-color-offwhite{
+    background-color:#f6f6f6;
+    border-top: 1px solid lightgray;
+}
+.comic-details{
+    width:70%;
+    margin:0 auto;
+    padding: 2rem 2.5rem;
+    justify-content: center;
+    .talent-col{
+        width:50%;
+        h4{
+            margin-bottom:0.4rem;
+            padding: 1.2rem;
+            border-bottom:1px solid lightgray;
+        }
+        .artist-content, .specs-content{
+            border-bottom: 1px lightgray solid;
+            padding: 0.4rem;
+            .artists, .writers{
+                width:60%;
+                font-size: 0.7rem;
+                margin-bottom: 0.4rem;
+
             }
         }
-        .specs.col{
-            width:50%;
-        }
+
     }
+    .specs-col{
+        width:50%;
+    }
+}
+.justify-content{
+    justify-content:space-between
 }
 .comic-img-wrapper{
     display:flex;

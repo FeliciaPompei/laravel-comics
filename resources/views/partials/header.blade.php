@@ -6,8 +6,8 @@
             </a>
             <ul class="my-flex my-height-100">
                 @foreach($navLinks as $navLink)
-						<li class="{{ ($navLink['active']) ? 'active' : '' }}">
-							<a href="{{ url($navLink['link']) }}">
+						<li class="{{ Route::currentRouteName() == $navLink['link'] ? 'active' : '' }}">
+							<a href="{{ (!$navLink['link'] == '') ? route($navLink['link']) : url('#') }}">
 								{{ $navLink['text'] }}
 							</a>
 						</li>

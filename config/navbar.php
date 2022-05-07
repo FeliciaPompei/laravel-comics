@@ -2,52 +2,53 @@
     return [
         [
             'text' => 'characters',
-            'link'=> '#',
+            'link'=> '',
             'active' => false,
+
         ],
         [
             'text' => 'comics',
-            'link' => '/comics',
+            'link' => 'comics',
             'active' => true,
         ],
         [
             'text' => 'movies',
-            'link' => '#',
+            'link' => '',
             'active' => false,
         ],
         [
             'text' => 'tv',
-            'link' => '#',
+            'link' => '',
             'active' => false,
         ],
         [
             'text' => 'games',
-            'link' => '#',
+            'link' => '',
             'active' => false,
         ],
         [
             'text' => 'collectibles',
-            'link' => '#',
+            'link' => '',
             'active' => false,
         ],
         [
             'text' => 'videos',
-            'link' => '#',
+            'link' => '',
             'active' => false,
         ],
         [
             'text' => 'fans',
-            'link' => '#',
+            'link' => '',
             'active' => false,
         ],
         [
             'text' => 'news',
-            'link' => '#',
+            'link' => '',
             'active' => false,
         ],
         [
             'text' => 'shop',
-            'link' => '#',
+            'link' => '',
             'active' => false,
         ],
     ]
