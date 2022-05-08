@@ -93,31 +93,35 @@
                     </span>
                 </div>
         </div>
-
-        <div class="specs-col">
-            <div class="my-flex">
-                <h6>
+        <div class="talent-col">
+            <h4>
+                Specs
+            </h4>
+            <div class="my-flex justify-content artist-content">
+                <span>
                     series:
-                </h6>
-                <p>
-                    {{$comic['series']}}
-                </p>
+                </span>
+                <span class="artists text-uppercase">
+                    <a href="#">
+                        {{$comic['series']}}
+                    </a>
+                </span>
             </div>
-            <div class="my-flex">
-                <h6>
+            <div class="my-flex justify-content artist-content">
+                <span>
                     U.S. Price:
-                </h6>
-                <p>
+                </span>
+                <span class="artists">
                     {{$comic['price']}}
-                </p>
+                </span>
             </div>
-            <div class="my-flex">
-                <h6>
-                    On sale Date::
-                </h6>
-                <p>
+            <div class="my-flex justify-content artist-content">
+                <span>
+                    On sale date:
+                </span>
+                <span class="artists">
                     {{$comic['sale_date']}}
-                </p>
+                </span>
             </div>
         </div>
     </div>

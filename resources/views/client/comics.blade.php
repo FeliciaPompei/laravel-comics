@@ -22,6 +22,7 @@
         <a class="btn">Load More</a>
     </div>
 </div>
+@include('partials.shop')
 @endsection
 
 

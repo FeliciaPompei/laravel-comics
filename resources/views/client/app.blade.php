@@ -3,5 +3,10 @@
 @section('title', 'HomePage')
 
 @section('main-content')
-    <h1>This is the home page for now!</h1>
+<div class="home-content">
+    <h1 class="text-white">
+        This is the home page!
+    </h1>
+</div>
+@include('partials.shop')
 @endsection

@@ -117,6 +117,10 @@ main {
         }
     }
 }
+.home-content{
+    text-align:center;
+    padding: 5rem;
+}
 
 // comic book page
 
@@ -203,6 +207,7 @@ main {
     justify-content: center;
     .talent-col{
         width:50%;
+        padding: 1rem;
         h4{
             margin-bottom:0.4rem;
             padding: 1.2rem;

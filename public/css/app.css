@@ -137,6 +137,11 @@ main .my-card-img img {
   margin-bottom: 0.5rem;
 }
 
+.home-content {
+  text-align: center;
+  padding: 5rem;
+}
+
 .bg-white {
   background-color: white;
 }
@@ -226,6 +231,7 @@ main .my-card-img img {
 }
 .comic-details .talent-col {
   width: 50%;
+  padding: 1rem;
 }
 .comic-details .talent-col h4 {
   margin-bottom: 0.4rem;
